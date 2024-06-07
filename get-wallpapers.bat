@@ -26,6 +26,8 @@ for %%f in ("%source_dir%\*") do (
 
     rem Copy the file to the destination directory with the new name
     copy "%%f" "%dest_dir%\!new_filename!"
+    
+    echo !new_filename!
 )
 
 echo All files have been copied and renamed.
